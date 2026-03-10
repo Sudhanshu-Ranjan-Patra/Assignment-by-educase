@@ -1,0 +1,17 @@
+/* Prevent the entire webpage from sliding or zooming */
+html, body, #root {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  position: fixed; 
+  touch-action: none; 
+}
+
+
+.inner-scroll-area {
+  overflow-y: auto;
+  touch-action: pan-y; 
+  -webkit-overflow-scrolling: touch; 
+}
